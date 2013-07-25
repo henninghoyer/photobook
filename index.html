@@ -4,9 +4,13 @@
   <meta charset="utf-8">
   <title>My Journal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if lt IE 9]>
+  <script src="js/html5.js"></script>
+  <![endif]-->
   
   <!-- Styles -->
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
   <link href="css/photobook.css" rel="stylesheet">
   </head>
 
@@ -14,30 +18,30 @@
     <div class="container">
       <div class='row heading'>
         <div class='span12'>
-          <h1>Sabine's Journal</h1>
+          <h1>Sabine's Travel Journal</h1>
         </div>
       </div>
-      <div class='row subheading'>
+      <!--<div class='row subheading'>
         <div class='span12'>
           <p class='lead'>Do we need a heading?</p>
         </div>
-      </div>
+      </div>-->
       <div class='row'> 
         <div id='photobook'>
           <div class='page active-page'>
-            <div class='span6 left'>
-              <img src='img/bio-left.png'>
-            </div>
-            <div class='span6 right'>
-              <img src='img/bio-right.png'>
-            </div>
-          </div>
-          <div class='page'>
             <div class='span6 left'>
               <img src='img/esc-left.png'>
             </div>
             <div class='span6 right'>
               <img src='img/esc-right.png'>
+            </div>
+          </div>
+          <div class='page'>
+            <div class='span6 left'>
+              <img src='img/bio-left.png'>
+            </div>
+            <div class='span6 right'>
+              <img src='img/bio-right.png'>
             </div>
           </div>
           <div class='page'>
@@ -67,7 +71,6 @@
     <script src="js/photobook.js"></script>
     <script>
       Page.init();
-      console.log('should init');
     </script>
   </body>
 </html>
