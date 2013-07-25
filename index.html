@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>My Journal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/photobook.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class='row heading'>
+        <div class='span12'>
+          <h1>Sabine's Journal</h1>
+        </div>
+      </div>
+      <div class='row subheading'>
+        <div class='span12'>
+          <p class='lead'>Do we need a heading?</p>
+        </div>
+      </div>
+      <div class='row'> 
+        <div id='photobook'>
+          <div class='page active-page'>
+            <div class='span6 left'>
+              <img src='img/bio-left.png'>
+            </div>
+            <div class='span6 right'>
+              <img src='img/bio-right.png'>
+            </div>
+          </div>
+          <div class='page'>
+            <div class='span6 left'>
+              <img src='img/esc-left.png'>
+            </div>
+            <div class='span6 right'>
+              <img src='img/esc-right.png'>
+            </div>
+          </div>
+          <div class='page'>
+            <div class='span6 left'>
+              <img src='img/fbi-left.png'>
+            </div>
+            <div class='span6 right'>
+              <img src='img/fbi-right.png'>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class='row'>
+        <nav>
+          <a id='btn-nav-first' class="btn disabled"><i class="icon-step-backward"></i></a> 
+          <a id='btn-nav-prev' class="btn disabled"><i class="icon-chevron-left"></i></a> 
+          <a id='btn-nav-next' class="btn"><i class="icon-chevron-right"></i></a> 
+          <a id='btn-nav-last' class="btn"><i class="icon-step-forward"></i></a> 
+        </nav>
+      </div>
+    </div> <!-- /container -->
+
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/photobook.js"></script>
+    <script>
+      Page.init();
+      console.log('should init');
+    </script>
+  </body>
+</html>

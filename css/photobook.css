@@ -1,0 +1,39 @@
+body {
+  padding-top: 60px; /*account for hidden area underneath collapsible navbar*/
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #F6F6F6;
+}
+
+.heading, .subheading {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.lead {
+  padding-top: 1.5%;
+  font-size: 24px;
+  line-height: 30px; 
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#photobook > .page {
+  display: none;
+}
+
+#photobook .active-page {
+  display: block;
+}
+
+.page .right {
+  margin-left: 0;
+}
+
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
