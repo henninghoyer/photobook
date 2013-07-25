@@ -16,6 +16,7 @@ var Page = function() {
     config.$navFirst.click(function() {
       $('#photobook .active-page').toggleClass('active-page');
       $('#photobook .page').first().toggleClass('active-page');
+      console.log($('#photobook .active-page').prev().length)
       toggleButtonState();
     });
 
@@ -49,10 +50,20 @@ var Page = function() {
       //disable navPrev & navFirst
       config.$navPrev.toggleClass('disabled');
       config.$navFirst.toggleClass('disabled');
+      
+      if(config.$navNext.hasClass('disabled')) {
+        config.$navNext.toggleClass('disabled');
+        config.$navLast.toggleClass('disabled');
+      }
     } else if(activePage.next().length === 0) {
       //disable navPrev & navFirst
       config.$navNext.toggleClass('disabled');
       config.$navLast.toggleClass('disabled');
+      
+      if(config.$navPrev.hasClass('disabled')) {
+        config.$navPrev.toggleClass('disabled');
+        config.$navFirst.toggleClass('disabled');  
+      }
     } else {
       nav.children('.disabled').toggleClass('disabled');
     }  
